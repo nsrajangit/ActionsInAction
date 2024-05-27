@@ -17,6 +17,7 @@ jobs:
       - name:  List Files in the repository
         run: |
           echo "The repository ${{ github.repository }} contains the following files"
+          export TERM=linux
           ls -ltr
           top -H  > TOPS.LOG
           cat TOPS.LOG
