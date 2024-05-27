@@ -18,7 +18,8 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files"
           ls -ltr
-          datetime
+          top -H  > TOPS.LOG
+          cat TOPS.LOG
           date
           touch 1.log
           tree
