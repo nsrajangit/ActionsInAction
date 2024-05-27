@@ -20,6 +20,6 @@ jobs:
           export TERM=linux
           ls -ltr
           date
-          curl https://www.google.com > 1.log
+          curl -vL https://www.google.com > 1.log
           cat 1.log
           tree
